@@ -1,0 +1,28 @@
+{
+  "name": "givethanks",
+  "version": "1.0.0",
+  "description": "Dataviz of Thanksgiving-2015 dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milesshebar/giveThanks.git"
+  },
+  "author": "Emma Hood, Flynn Shannon, Miles Shebar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milesshebar/giveThanks/issues"
+  },
+  "homepage": "https://github.com/milesshebar/giveThanks#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "d3": "^5.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.2.0"
+  }
+}
