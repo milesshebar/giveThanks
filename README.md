@@ -1,15 +1,14 @@
 # giveThanks
-Data visualization of ingredients served at Thanksgiving 2015 from [FiveThirtyEight data](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015).
+Data visualization of ingredients served at Thanksgiving 2015 from [FiveThirtyEight dataset](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015).
 
-This project is still in development and doesn't have a usable frontend yet.
+This project is unstable and still in active development.
 
-## Setup
-- Install [node](https://nodejs.org/en/) if you haven't already
+## Setup for development
+- Requrires [node](https://nodejs.org/en/) to run locally
 - Clone the repository
-- Install npm dependencies with `npm install`
-- Run local webserver with `npm run start`
-
-## Team
-[@milesshebar](https://github.com/milesshebar),
+- Install dependencies with `npm install`
+- Run locally with `npm run start`
+---
+Created for SCMP368: Software Development by [@milesshebar](https://github.com/milesshebar),
 [@hoode15](https://github.com/hoode15),
-and [@flynnshannon](https://github.com/flynnshannon)
+and [@flynnshannon](https://github.com/flynnshannon).
