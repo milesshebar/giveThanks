@@ -23,5 +23,17 @@ document.ready(function(){
         turduckenCount++;
       }
     });
+    var barLengths = [turkeyCount, tofurkeyCount, porkCount, turduckenCount, beefCount];
   });
 });
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(barLengths)])
+    .range([0, 420]);
+
+d3.select(".MainDishBars")
+  .selectAll("div")
+    .data(barLengths)
+  .enter().append("div")
+    .style("width", function(d) { return x(d) + "px"; })
+    .text(function(d) { return d; });
