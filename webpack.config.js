@@ -10,7 +10,8 @@ module.exports = {
                 $: "jquery",
                 jQuery: "jquery",
                 "window.jQuery": "jquery",
-                d3: 'd3'
+                d3: 'd3',
+                d3pie: 'd3pie'
             })
         ],
   module: {
