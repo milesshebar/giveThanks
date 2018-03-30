@@ -238,6 +238,7 @@ $(document).ready(function(){
         'value': d3.sum(d, function(e) { return 1; })
       };
     })
+		var data = document;
     .entries(data);
 
   // accessor functions
