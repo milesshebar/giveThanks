@@ -21,9 +21,10 @@
   "homepage": "https://github.com/milesshebar/giveThanks#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "d3": "^5.0.0",
+    "d3": "^4.13.0",
     "d3pie": "^0.2.1",
     "jquery": "^3.3.1",
+    "npm": "^5.8.0",
     "popper.js": "^1.14.1"
   },
   "devDependencies": {
@@ -32,7 +33,7 @@
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
     "style-loader": "^0.20.3",
-    "webpack": "^4.2.0",
+    "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
   }
