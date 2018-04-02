@@ -6,24 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css" />
   <title>giveThanks</title>
+  <style>
+  header {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  footer {
+    position: absolute;
+    margin-top: 6000px;
+    text-align: center;
+  }
+  .container-fluid div {
+    position:absolute;
+    margin:auto;
+  }
+  </style>
 </head>
 
 <body>
-  <div class="container-fluid center-block">
-    <div id="ApplePieGender" style="position:absolute"></div>
-    <div id="ApplePieRegion" style="top:500px;position:absolute"></div>
-    <div id="CherryPieGender" style="top:1000px;position:absolute"></div>
-    <div id="CherryPieRegion" style="top:1500px;position:absolute"></div>
-    <div id="ChocolatePieGender" style="top:2000px;position:absolute"></div>
-    <div id="ChocolatePieRegion" style="top:2500px;position:absolute"></div>
-    <div id="KeyLimePieGender" style="top:3000px;position:absolute"></div>
-    <div id="KeyLimePieRegion" style="top:3500px;position:absolute"></div>
-    <div id="PecanPieGender" style="top:4000px;position:absolute"></div>
-    <div id="PecanPieRegion" style="top:4500px;position:absolute"></div>
-    <div id="PumpkinPieGender" style="top:5000px;position:absolute"></div>
-    <div id="PumpkinPieRegion" style="top:5500px;position:absolute"></div>
+  <header class="container-fluid">
+    <h1>giveThanks</h1>
+    <p>
+    Data visualization of food served at 1,058 Thanksgiving meals in 2015.
+    </p>
+  </header>
+  <div class="container-fluid">
+    <div id="ApplePieGender"></div>
+    <div id="ApplePieRegion" style="top:600px;"></div>
+    <div id="CherryPieGender" style="top:1100px;"></div>
+    <div id="CherryPieRegion" style="top:1600px;"></div>
+    <div id="ChocolatePieGender" style="top:2100px;"></div>
+    <div id="ChocolatePieRegion" style="top:2600px;"></div>
+    <div id="KeyLimePieGender" style="top:3100px;" ></div>
+    <div id="KeyLimePieRegion" style="top:3600px;"></div>
+    <div id="PecanPieGender" style="top:4100px;" ></div>
+    <div id="PecanPieRegion" style="top:4600px;"></div>
+    <div id="PumpkinPieGender" style="top:5100px;"></div>
+    <div id="PumpkinPieRegion" style="top:5600px;"></div>
     <div id="MainDishBars"></div>
   </div>
+
+  <footer class="container-fluid">
+    <p>
+      Created for SCMP368: Software Development by <a href='https://github.com/milesshebar'>@milesshebar</a>,
+      <a href="https://github.com/hoode15">@hoode15</a>,
+      and <a href='https://github.com/flynnshannon'>@flynnshannon</a>.
+    </p>
+    <p>
+      Uses <a href="https://d3js.org">D3.js</a>, <a href="https://webpack.js.org/">Webpack</a> (with <a href="https://babeljs.io/">Babel</a>), <a href="http://jquery.com/">jQuery</a>, and <a href="https://getbootstrap.com">Bootstrap</a>
+    </p>
+    <p>
+    Open source dataset provided by <a href="https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015" target="_blank" rel="noopener">FiveThirtyEight</a>.
+    </p>
+  </header>
 
 </body>
 
