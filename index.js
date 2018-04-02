@@ -47,7 +47,7 @@ $(document).ready(function(){
 					fontSize: 16
 				},
 				percentage: {
-					color: "#dddddd",
+					color: "#000000",
 					font: "arial",
 					fontSize: 16,
 					decimalPlaces: 0
@@ -62,12 +62,13 @@ $(document).ready(function(){
 				colors: {
 					segments: [
 						//Change colors here
-						"#ff8000", "#ff0000"
+						"#ccff33", "#ff0000"
 					]
 				}
 			}
 		});
 	});
+	$("#ApplePieGender").append('<img src="piecrust.png" style="position:absolute;right:70px;top:75px;z-index:-1;width:365px">');
 });
 
 //ApplePieRegion.js
@@ -76,44 +77,39 @@ $(document).ready(function(){
 	$("#ApplePieRegion").empty();
     d3.csv("thanksgiving-2015-poll-data.csv", function(data) {
 		var thanksCSV = data;
-		var eastNorthCount = 0;
-		var eastSouthCount = 0;
-		var midAtlanticCount = 0;
-		var mountainCount = 0;
-		var newEnglandCount = 0;
-		var pacificCount = 0;
-		var southAtlanticCount = 0;
-		var westNorthCount = 0;
-		var westSouthCount = 0;
+		var midwestCount = 0;
+		var northeastCount = 0;
+		var southeastCount = 0;
+		var westCount = 0;
 		for (var i = 0; i <= 1057; i++) {
 			//Change to proper question
 			if (thanksCSV[i]["Which type of pie is typically served at your Thanksgiving dinner? Please select all that apply. - Apple"] === "Apple") {
 				if (thanksCSV[i]["US Region"] === "East North Central") {
-					eastNorthCount++;
+					midwestCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "East South Central") {
-					eastSouthCount++;
+					southeastCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "Middle Atlantic") {
-					midAtlanticCount++;
+					northeastCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "Mountain") {
-					mountainCount++;
+					westCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "New England") {
-					newEnglandCount++;
+					northeastCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "Pacific") {
-					pacificCount++;
+					westCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "South Atlantic") {
-					southAtlanticCount++;
+					southeastCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "West North Central") {
-					westNorthCount++;
+					midwestCount++;
 				}
 				if (thanksCSV[i]["US Region"] === "West South Central") {
-					westSouthCount++;
+					southeastCount++;
 				}
 			}
 		}
@@ -129,15 +125,10 @@ $(document).ready(function(){
 			},
 			data: {
 				content: [
-					{ label: "East North Central", value: eastNorthCount},
-					{ label: "East South Central", value: eastSouthCount},
-					{ label: "Middle Atlantic", value: midAtlanticCount},
-					{ label: "Mountain", value: mountainCount},
-					{ label: "New England", value: newEnglandCount},
-					{ label: "Pacific", value: pacificCount},
-					{ label: "South Atlantic", value: southAtlanticCount},
-					{ label: "West North Central", value: westNorthCount},
-					{ label: "West South Central", value: westSouthCount}
+					{ label: "Midwest", value: midwestCount},
+					{ label: "Northeast", value: northeastCount},
+					{ label: "Southeast", value: southeastCount},
+					{ label: "West", value: westCount}
 				]
 			},
 			labels: {
@@ -162,61 +153,11 @@ $(document).ready(function(){
 				colors: {
 					segments: [
 						//Change colors here
-						"#cc0000", "#ff0000", "#ff3300", "#ff6600", "#ff9933", "#ffcc00", "#ffff00", "#ccff33", "#99ff33"
+						"#cc0000", "#ff0000", "#ffff00", "#ccff33"
 					]
 				}
 			}
 		});
+		$("#ApplePieRegion").append('<img src="piecrust.png" style="position:absolute;right:70px;top:75px;z-index:-1;width:365px">');
 	});
 });
-
-
-//PieChart.js
-  var thanksCSV;
-
-  $(document).ready(function(){
-      console.log("start!");
-  	$("#pie").empty();
-      $.ajax({
-  		url: 'thanksgiving-2015-poll-data.csv', // name of file to parse
-  		dataType: "csv",
-  		success: getCSV,
-  		error: function(){alert("Error: Something went wrong");}
-      });
-  });
-
-  function getCSV(document) {
-      thanksCSV = document;
-      makeChart();
-  }
-
-  function makeChart(){
-  	var key = "Which type of pie is typically served at your Thanksgiving dinner? Please select all that apply. - Apple";
-  	var maleCount = 0;
-  	var femaleCount = 0;
-  	console.log(thanksCSV.length);
-      for (var i = 0; i < thanksCSV.length; i++) {
-          if (thanksCSV[i][key] === "Apple") {
-              if (thanksCSV[i]["What is your gender?"] === "Male") {
-  				maleCount++;
-  			}
-  			if (thanksCSV[i]["What is your gender?"] === "Female") {
-  				femaleCount++;
-  			}
-          }
-      }
-
-  	var pie = new d3pie("pie", {
-  		header: {
-  			title: {
-  				text: "Apple Pie by Gender"
-  			}
-  		},
-  		data: {
-  			content: [
-  				{ label: "Male", value: maleCount},
-  				{ label: "Female", value: femaleCount }
-  			]
-  		}
-  	});
-  };
