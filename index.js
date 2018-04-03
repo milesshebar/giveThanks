@@ -937,14 +937,14 @@ $(document).ready(function(){
 	});
 });
 
+var turkeyCount = 0;
+var tofurkeyCount = 0;
+var porkCount = 0;
+var turduckenCount = 0;
+var beefCount = 0;
 $(document).ready(function(){
   $("#MainDishBars").empty();
   d3.csv("thanksgiving-2015-poll-data.csv", function(data) {
-    var turkeyCount = 0;
-    var tofurkeyCount = 0;
-    var porkCount = 0;
-    var turduckenCount = 0;
-    var beefCount = 0;
 		console.log('initialized bar lengths');
     data.forEach(function(person){
       if(person["What is typically the main dish at your Thanksgiving dinner?"]==="Turkey"){
@@ -969,11 +969,12 @@ $(document).ready(function(){
 			return t.food
 		});
   });
+make
 });
-console.log('what is going on');
+//console.log('what is going on');
 	console.log(`turkey count: ${turkeyCount}`);
-	console.log('under turkey count')
-;	var margin = {top: 5, bottom: 5, left: 50, right: 50};
+	//console.log('under turkey count');
+	var margin = {top: 5, bottom: 5, left: 50, right: 50};
 	var fullWidth = 700;
 	var fullHeight = 200;
 	var width = fullWidth - margin.right - margin.left;
