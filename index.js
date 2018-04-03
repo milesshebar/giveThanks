@@ -969,9 +969,11 @@ $(document).ready(function(){
 			return t.food
 		});
   });
-make
+makeBarChart();
 });
 //console.log('what is going on');
+
+function makeBarChart(){
 	console.log(`turkey count: ${turkeyCount}`);
 	//console.log('under turkey count');
 	var margin = {top: 5, bottom: 5, left: 50, right: 50};
@@ -1038,6 +1040,8 @@ var barHolder = svg.append('g')
 	      // the bar's height should align it with the base of the chart (y=0)
 	      return height - countScale(d.count);
 	    });
+
+		}
 /*var x = d3.scale.linear()
     .domain([0, d3.max(barLengths)])
     .range([0, 420]);
