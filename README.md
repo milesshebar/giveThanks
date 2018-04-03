@@ -9,6 +9,6 @@ This project is unstable and still in active development.
 - Install dependencies with `npm install`
 - Run locally with `npm run start`
 ---
-Created for SCMP368: Software Development by [@milesshebar](https://github.com/milesshebar),
+Created for SCMP368: Software Development at [Kenyon College](http://kenyon.edu) by [@milesshebar](https://github.com/milesshebar),
 [@hoode15](https://github.com/hoode15),
 and [@flynnshannon](https://github.com/flynnshannon).
