@@ -1,7 +1,7 @@
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
-import * as d3 from "d3";
+import csv from "d3";
 import d3pie from 'd3pie';
 window.d3 = d3;
 
