@@ -5,46 +5,41 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>giveThanks</title>
+
+  <!-- Styling -->
   <style>
     header {
       text-align: center;
       margin-top: 20px;
       margin-right: 40px;
     }
-
     footer {
       position: absolute;
       margin-top: 6040px;
       text-align: center;
       padding-bottom: 20px;
     }
-
     footer img {
       max-width: 40px;
       transition: 0.1s opacity ease;
     }
-
     footer img:hover {
       opacity: 0.4;
     }
-
+    svg {
+      margin: auto;
+    }
     .container-fluid div {
       position: absolute;
       margin: auto;
     }
-
-
-.charts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-svg {
-  margin: auto;
-
-}
+    .charts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   </style>
+
 </head>
 
 <body>
@@ -55,6 +50,7 @@ svg {
     </p>
   </header>
 
+  <!-- Charts -->
   <div class="container-fluid charts">
     <div id="ApplePieGender" style="top:130px;"></div>
     <div id="ApplePieRegion" style="top:630px;"></div>
@@ -101,12 +97,14 @@ svg {
       <a href="http://kenyon.edu" rel="noopener" target="_blank">Kenyon College</a>, Spring 2018
     </p>
 
+    <!-- GitHub Link -->
     <a href="https://github.com/milesshebar/giveThanks" rel="noopener" target="_blank"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" /></a>
+
 </footer>
-  <script src="bundle.js"></script>
+
+<!-- Webpack Bundle -->
+<script src="bundle.js"></script>
 
 </body>
-
-
 
 </html>
