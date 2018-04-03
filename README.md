@@ -9,7 +9,7 @@ This project is unstable and still in active development.
 - Install dependencies with `npm install`
 - Run locally with `npm run start` (for development)
 - Build for production with `npm run build`
-  - This creates a `dist/` folder within the directory with all necessary assets bundled for production
+  - This creates a `dist/` folder within the directory with all necessary assets bundled for deployment
 ---
 Created for SCMP368: Software Development at [Kenyon College](http://kenyon.edu) by [@milesshebar](https://github.com/milesshebar),
 [@hoode15](https://github.com/hoode15),
