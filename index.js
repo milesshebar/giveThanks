@@ -942,6 +942,8 @@ var tofurkeyCount = 0;
 var porkCount = 0;
 var turduckenCount = 0;
 var beefCount = 0;
+var barLengths;
+var foods;
 $(document).ready(function(){
   $("#MainDishBars").empty();
   d3.csv("thanksgiving-2015-poll-data.csv", function(data) {
@@ -964,8 +966,8 @@ $(document).ready(function(){
       }
     });
 		console.log('turkey count: ' + turkeyCount);
-    var barLengths = [{food: 'Turkey', count: turkeyCount}, {food: 'Tofurkey', count: tofurkeyCount}, {Food: 'Pork', count: porkCount}, {food: 'Turducken', count: turduckenCount}, {Food: 'Beef', count: beefCount}];
-		var foods = barLengths.map(function(t){
+     barLengths = [{food: 'Turkey', count: turkeyCount}, {food: 'Tofurkey', count: tofurkeyCount}, {Food: 'Pork', count: porkCount}, {food: 'Turducken', count: turduckenCount}, {Food: 'Beef', count: beefCount}];
+		 foods = barLengths.map(function(t){
 			return t.food
 		});
   });
