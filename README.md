@@ -1,9 +1,11 @@
 # giveThanks
 Data visualization of ingredients served at Thanksgiving 2015 from [FiveThirtyEight dataset](https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015).
 
-This project is unstable and still in active development.
+You can view a live demo of this project [here.](https://cslab.kenyon.edu/class/softdev/shebar1/givethanks)
 
-## Setup
+![alt text](https://i.imgur.com/sjGs2a9.png "giveThanks pie example")
+
+## Setup for development
 - Requrires [node](https://nodejs.org/en/) to run locally
 - Clone the repository
 - Install dependencies with `npm install`
