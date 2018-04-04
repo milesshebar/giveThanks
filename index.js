@@ -47,7 +47,7 @@ $(document).ready(function(){
 					fontSize: 16
 				},
 				percentage: {
-					color: "#000000",
+					color: "#dddddd",
 					font: "arial",
 					fontSize: 16,
 					decimalPlaces: 0
@@ -62,7 +62,7 @@ $(document).ready(function(){
 				colors: {
 					segments: [
 						//Change colors here
-						"#ccff33", "#ff0000"
+						"#d16900", "#c80000"
 					]
 				}
 			}
@@ -138,7 +138,7 @@ $(document).ready(function(){
 					fontSize: 16
 				},
 				percentage: {
-					color: "#000000",
+					color: "#dddddd",
 					font: "arial",
 					fontSize: 16,
 					decimalPlaces: 0
@@ -153,7 +153,7 @@ $(document).ready(function(){
 				colors: {
 					segments: [
 						//Change colors here
-						"#cc0000", "#ff0000", "#ffff00", "#ccff33"
+						"#af0000", "#c80000", "#c73f00", "#d16900"
 					]
 				}
 			}
